@@ -113,16 +113,16 @@
     <h2 class="sr-only" id="shop-title">Products</h2>
     <p class="shop-note reveal"><strong>Preview store.</strong> Products and prices shown are samples, and checkout is not connected yet.</p>
     <div class="shop-bar">
-      <div class="chips" data-filter-group="#products" role="group" aria-label="Filter products">
-        <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
-        <button class="chip" type="button" data-filter="men" aria-pressed="false">Men</button>
-        <button class="chip" type="button" data-filter="women" aria-pressed="false">Women</button>
-        <button class="chip" type="button" data-filter="accessories" aria-pressed="false">Accessories</button>
-      </div>
-      <p class="shop-count" data-count aria-live="polite">8 items</p>
+      <nav class="chips" aria-label="Shop categories">
+        <a class="chip" href="shop.html" aria-current="page">All</a>
+        <a class="chip" href="shop-men.html">Men</a>
+        <a class="chip" href="shop-women.html">Women</a>
+        <a class="chip" href="shop-accessories.html">Accessories</a>
+      </nav>
+      <p class="shop-count">8 items</p>
     </div>
     <div class="prod-grid" id="products">
-      <article class="prod" data-cat="men">
+      <article class="prod">
         <div class="prod-art"><svg aria-hidden="true"><use href="#i-shirt"/></svg></div>
         <div class="prod-body">
           <span class="prod-cat">Men</span>
@@ -134,7 +134,7 @@
           </div>
         </div>
       </article>
-      <article class="prod" data-cat="men">
+      <article class="prod">
         <div class="prod-art"><svg aria-hidden="true"><use href="#i-shirt"/></svg></div>
         <div class="prod-body">
           <span class="prod-cat">Men</span>
@@ -146,7 +146,7 @@
           </div>
         </div>
       </article>
-      <article class="prod" data-cat="men">
+      <article class="prod">
         <div class="prod-art"><svg aria-hidden="true"><use href="#i-shirt"/></svg></div>
         <div class="prod-body">
           <span class="prod-cat">Men</span>
@@ -158,7 +158,7 @@
           </div>
         </div>
       </article>
-      <article class="prod" data-cat="women">
+      <article class="prod">
         <div class="prod-art"><svg aria-hidden="true"><use href="#i-shirt"/></svg></div>
         <div class="prod-body">
           <span class="prod-cat">Women</span>
@@ -170,7 +170,7 @@
           </div>
         </div>
       </article>
-      <article class="prod" data-cat="women">
+      <article class="prod">
         <div class="prod-art"><svg aria-hidden="true"><use href="#i-shirt"/></svg></div>
         <div class="prod-body">
           <span class="prod-cat">Women</span>
@@ -182,7 +182,7 @@
           </div>
         </div>
       </article>
-      <article class="prod" data-cat="women">
+      <article class="prod">
         <div class="prod-art"><svg aria-hidden="true"><use href="#i-shirt"/></svg></div>
         <div class="prod-body">
           <span class="prod-cat">Women</span>
@@ -194,7 +194,7 @@
           </div>
         </div>
       </article>
-      <article class="prod" data-cat="accessories">
+      <article class="prod">
         <div class="prod-art"><svg aria-hidden="true"><use href="#i-cap"/></svg></div>
         <div class="prod-body">
           <span class="prod-cat">Accessories</span>
@@ -206,7 +206,7 @@
           </div>
         </div>
       </article>
-      <article class="prod" data-cat="accessories">
+      <article class="prod">
         <div class="prod-art"><svg aria-hidden="true"><use href="#i-beanie"/></svg></div>
         <div class="prod-body">
           <span class="prod-cat">Accessories</span>
@@ -219,7 +219,6 @@
         </div>
       </article>
     </div>
-    <p class="news-empty" data-empty hidden>No products in this category yet.</p>
   </div>
 </section>
 
@@ -274,9 +273,9 @@
     <nav class="f-col" aria-label="Support">
       <h3>Support</h3>
       <ul>
-        <li><a href="get-involved.html#partners">Partners</a></li>
-        <li><a href="get-involved.html#sponsorship">Sponsorship</a></li>
-        <li><a href="get-involved.html#donate">Donate</a></li>
+        <li><a href="partners.html">Partners</a></li>
+        <li><a href="sponsorship.html">Sponsorship</a></li>
+        <li><a href="donate.html">Donate</a></li>
         <li><a href="get-involved.html">Get Involved</a></li>
       </ul>
     </nav>
@@ -284,9 +283,9 @@
       <h3>Shop</h3>
       <ul>
         <li><a href="shop.html">All Products</a></li>
-        <li><a href="shop.html#men">Men</a></li>
-        <li><a href="shop.html#women">Women</a></li>
-        <li><a href="shop.html#accessories">Accessories</a></li>
+        <li><a href="shop-men.html">Men</a></li>
+        <li><a href="shop-women.html">Women</a></li>
+        <li><a href="shop-accessories.html">Accessories</a></li>
       </ul>
     </nav>
     <nav class="f-col" aria-label="Company">
@@ -294,7 +293,7 @@
       <ul>
         <li><a href="our-story.html">About Us</a></li>
         <li><a href="news.html">News</a></li>
-        <li><a href="contact.html#careers">Careers</a></li>
+        <li><a href="careers.html">Careers</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>

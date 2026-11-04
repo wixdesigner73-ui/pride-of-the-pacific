@@ -110,9 +110,9 @@ a.pillar:hover .link-u::after { width: 100%; }
 
 /* ---------- news page ---------- */
 .chips { display: flex; flex-wrap: wrap; gap: .5rem; }
-.chip { height: 1.9rem; padding: 0 1rem; border: 1px solid var(--line); font-size: .55rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--grey); transition: background-color .3s, color .3s, border-color .3s; }
+.chip { display: inline-flex; align-items: center; height: 1.9rem; padding: 0 1rem; border: 1px solid var(--line); font-size: .55rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--grey); transition: background-color .3s, color .3s, border-color .3s; }
 .chip:hover { border-color: rgba(255, 255, 255, .6); color: var(--white); }
-.chip[aria-pressed="true"] { background: var(--white); border-color: var(--white); color: var(--black); }
+.chip[aria-pressed="true"], .chip[aria-current="page"] { background: var(--white); border-color: var(--white); color: var(--black); }
 .news-page { padding: 1.8rem 0 3rem; background: var(--black); }
 .news-page .news-grid { margin-top: 1rem; grid-template-columns: repeat(2, 1fr); gap: 1.4rem; }
 .news-page .news-img { height: 9.5rem; }
