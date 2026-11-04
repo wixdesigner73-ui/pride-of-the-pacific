@@ -10,6 +10,7 @@
   <link rel="preload" href="assets/fonts/oswald-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/img/hero.jpg" as="image">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/pages.css">
 </head>
 <body class="is-loading">
 
@@ -47,28 +48,28 @@
 <!-- ============ HEADER ============ -->
 <header class="site-header" id="top">
   <div class="header-inner">
-    <a class="logo" href="#home" aria-label="Pride of the Pacific — home">
+    <a class="logo" href="index.html" aria-label="Pride of the Pacific — home">
       <svg class="logo-emblem" aria-hidden="true"><use href="#emblem"/></svg>
       <span class="logo-text"><strong>PRIDE</strong><span>OF THE PACIFIC</span></span>
     </a>
 
     <nav class="main-nav" id="main-nav" aria-label="Primary">
       <ul>
-        <li><a href="#home" class="is-active" aria-current="page">Home</a></li>
-        <li><a href="#categories">Our Story</a></li>
-        <li><a href="#expeditions">Expeditions</a></li>
-        <li><a href="#athletes">Athletes</a></li>
-        <li><a href="#impact">Impact</a></li>
-        <li><a href="#shop">Shop</a></li>
-        <li><a href="#journal">News</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html" class="is-active" aria-current="page">Home</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
+        <li><a href="expeditions.html">Expeditions</a></li>
+        <li><a href="athletes.html">Athletes</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
     <div class="header-tools">
       <button class="icon-btn" type="button" id="search-toggle" aria-label="Search" aria-expanded="false" aria-controls="search-panel"><svg><use href="#i-search"/></svg></button>
-      <a class="icon-btn" href="#contact" aria-label="Account"><svg><use href="#i-user"/></svg></a>
-      <a class="icon-btn" href="#shop" aria-label="Shopping bag"><svg><use href="#i-bag"/></svg></a>
+      <a class="icon-btn" href="contact.html" aria-label="Account"><svg><use href="#i-user"/></svg></a>
+      <a class="icon-btn" href="shop.html" aria-label="Shopping bag"><svg><use href="#i-bag"/></svg><span class="bag-count" hidden>0</span></a>
       <button class="burger" type="button" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -91,8 +92,8 @@
     <h1 class="hero-title"><span class="line"><span>One Pacific.</span></span><span class="line"><span>One Dream.</span></span></h1>
     <p class="hero-sub">Inspiring a generation. From the ocean to the mountains.<br>We are stronger together.</p>
     <div class="hero-cta">
-      <a class="btn btn-light" href="#categories">Our Story</a>
-      <a class="btn btn-ghost" href="#everest">Watch Film <svg class="ico-play"><use href="#i-play"/></svg></a>
+      <a class="btn btn-light" href="our-story.html">Our Story</a>
+      <a class="btn btn-ghost" href="expeditions.html#everest-2027">Watch Film <svg class="ico-play"><use href="#i-play"/></svg></a>
     </div>
   </div>
   <a class="scroll-cue" href="#categories" aria-label="Scroll down"><svg><use href="#i-mouse"/></svg><span>Scroll</span></a>
@@ -100,7 +101,7 @@
 
 <!-- ============ CATEGORY CARDS ============ -->
 <section class="cards" id="categories" aria-label="Explore Pride of the Pacific">
-  <a class="card reveal" href="#everest" id="expeditions">
+  <a class="card reveal" href="expeditions.html">
     <img src="assets/img/card-expeditions.jpg" alt="A mountaineer in a red jacket climbing a snowy mountain" loading="lazy">
     <span class="card-shade"></span>
     <span class="card-body">
@@ -110,7 +111,7 @@
       <span class="link-u">Explore</span>
     </span>
   </a>
-  <a class="card reveal" href="#journal" id="athletes" style="--d:.08s">
+  <a class="card reveal" href="athletes.html" style="--d:.08s">
     <img src="assets/img/card-athletes.jpg" alt="A woman swimming underwater in deep blue ocean" loading="lazy">
     <span class="card-shade"></span>
     <span class="card-body">
@@ -120,7 +121,7 @@
       <span class="link-u">Meet Them</span>
     </span>
   </a>
-  <a class="card reveal" href="#journal" id="impact" style="--d:.16s">
+  <a class="card reveal" href="impact.html" style="--d:.16s">
     <img src="assets/img/card-impact.jpg" alt="A group of smiling Pacific Island children" loading="lazy">
     <span class="card-shade"></span>
     <span class="card-body">
@@ -130,7 +131,7 @@
       <span class="link-u">Our Impact</span>
     </span>
   </a>
-  <a class="card reveal" href="#get-involved" id="pacific" style="--d:.24s">
+  <a class="card reveal" href="the-pacific.html" style="--d:.24s">
     <img src="assets/img/card-pacific.jpg" alt="Aerial view of Pacific islands and turquoise ocean" loading="lazy">
     <span class="card-shade"></span>
     <span class="card-body">
@@ -140,7 +141,7 @@
       <span class="link-u">Discover</span>
     </span>
   </a>
-  <a class="card reveal" href="#shop" id="shop" style="--d:.32s">
+  <a class="card reveal" href="shop.html" style="--d:.32s">
     <img src="assets/img/card-shop.jpg" alt="Black Pride of the Pacific branded apparel with a hang tag" loading="lazy">
     <span class="card-shade"></span>
     <span class="card-body">
@@ -160,7 +161,7 @@
     <p class="eyebrow">Everest 2027</p>
     <h2 id="everest-title">The ultimate challenge.<br>The biggest purpose.</h2>
     <p class="everest-text">Pete Vinaka is preparing to climb Mount Everest in 2027<br class="br-d"> to inspire the next generation across the Pacific and<br class="br-d"> raise awareness for education, health and opportunity.</p>
-    <a class="btn btn-ghost" href="#journal">Follow the Journey</a>
+    <a class="btn btn-ghost" href="expeditions.html#everest-2027">Follow the Journey</a>
   </div>
 </section>
 
@@ -172,12 +173,12 @@
         <p class="eyebrow">Latest News</p>
         <h2 id="journal-title">Journal</h2>
       </div>
-      <a class="view-all" href="#journal">View all news <svg><use href="#i-arrow"/></svg></a>
+      <a class="view-all" href="news.html">View all news <svg><use href="#i-arrow"/></svg></a>
     </header>
 
     <div class="news-grid">
       <article class="news-card reveal">
-        <a class="news-link" href="#journal" aria-label="Manaslu Expedition Update">
+        <a class="news-link" href="article-manaslu.html" aria-label="Manaslu Expedition Update">
           <div class="news-img">
             <img src="assets/img/news-manaslu.jpg" alt="A mountaineer in a red jacket on a snowy ridge" loading="lazy">
             <div class="news-meta"><span class="tag">Expeditions</span><time datetime="2025-05-10">10 May 2025</time></div>
@@ -190,7 +191,7 @@
         </a>
       </article>
       <article class="news-card reveal" style="--d:.1s">
-        <a class="news-link" href="#journal" aria-label="Rising Star: Talei Rawamila">
+        <a class="news-link" href="article-talei.html" aria-label="Rising Star: Talei Rawamila">
           <div class="news-img">
             <img src="assets/img/news-talei.jpg" alt="A swimmer in goggles and cap powering through the butterfly stroke" loading="lazy">
             <div class="news-meta"><span class="tag">Athletes</span><time datetime="2025-05-10">10 May 2025</time></div>
@@ -203,7 +204,7 @@
         </a>
       </article>
       <article class="news-card reveal" style="--d:.2s">
-        <a class="news-link" href="#journal" aria-label="Working with Pacific Communities">
+        <a class="news-link" href="article-community.html" aria-label="Working with Pacific Communities">
           <div class="news-img">
             <img src="assets/img/news-community.jpg" alt="A large group of smiling Pacific children outdoors" loading="lazy">
             <div class="news-meta"><span class="tag">Impact</span><time datetime="2025-05-08">08 May 2025</time></div>
@@ -227,7 +228,7 @@
     <div class="cta-copy reveal">
       <h2 id="cta-title">Be part of the journey</h2>
       <p>Whether you explore, support, or represent –<br class="br-d"> together we can make a difference across the Pacific.</p>
-      <a class="btn btn-light" href="#contact">Get Involved</a>
+      <a class="btn btn-light" href="get-involved.html">Get Involved</a>
     </div>
     <ul class="socials reveal" style="--d:.12s">
       <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg><use href="#i-youtube"/></svg></a></li>
@@ -243,7 +244,7 @@
 <!-- ============ FOOTER ============ -->
 <footer class="site-footer" id="contact">
   <div class="footer-grid">
-    <a class="footer-logo" href="#home" aria-label="Pride of the Pacific — back to top">
+    <a class="footer-logo" href="index.html" aria-label="Pride of the Pacific — home">
       <svg class="logo-emblem" aria-hidden="true"><use href="#emblem"/></svg>
       <span class="f-pride">PRIDE</span>
       <span class="f-of">OF THE PACIFIC</span>
@@ -252,38 +253,38 @@
     <nav class="f-col" aria-label="Explore">
       <h3>Explore</h3>
       <ul>
-        <li><a href="#categories">Our Story</a></li>
-        <li><a href="#expeditions">Expeditions</a></li>
-        <li><a href="#athletes">Athletes</a></li>
-        <li><a href="#impact">Impact</a></li>
-        <li><a href="#pacific">The Pacific</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
+        <li><a href="expeditions.html">Expeditions</a></li>
+        <li><a href="athletes.html">Athletes</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li><a href="the-pacific.html">The Pacific</a></li>
       </ul>
     </nav>
     <nav class="f-col" aria-label="Support">
       <h3>Support</h3>
       <ul>
-        <li><a href="#get-involved">Partners</a></li>
-        <li><a href="#get-involved">Sponsorship</a></li>
-        <li><a href="#get-involved">Donate</a></li>
-        <li><a href="#get-involved">Get Involved</a></li>
+        <li><a href="get-involved.html#partners">Partners</a></li>
+        <li><a href="get-involved.html#sponsorship">Sponsorship</a></li>
+        <li><a href="get-involved.html#donate">Donate</a></li>
+        <li><a href="get-involved.html">Get Involved</a></li>
       </ul>
     </nav>
     <nav class="f-col" aria-label="Shop">
       <h3>Shop</h3>
       <ul>
-        <li><a href="#shop">All Products</a></li>
-        <li><a href="#shop">Men</a></li>
-        <li><a href="#shop">Women</a></li>
-        <li><a href="#shop">Accessories</a></li>
+        <li><a href="shop.html">All Products</a></li>
+        <li><a href="shop.html#men">Men</a></li>
+        <li><a href="shop.html#women">Women</a></li>
+        <li><a href="shop.html#accessories">Accessories</a></li>
       </ul>
     </nav>
     <nav class="f-col" aria-label="Company">
       <h3>Company</h3>
       <ul>
-        <li><a href="#home">About Us</a></li>
-        <li><a href="#journal">News</a></li>
-        <li><a href="#contact">Careers</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="our-story.html">About Us</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html#careers">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
@@ -301,7 +302,7 @@
 
   <div class="footer-bar">
     <p>© 2025 Pride of the Pacific. All rights reserved.</p>
-    <p class="legal"><a href="#contact">Privacy Policy</a><a href="#contact">Terms &amp; Conditions</a></p>
+    <p class="legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a></p>
   </div>
 </footer>
 

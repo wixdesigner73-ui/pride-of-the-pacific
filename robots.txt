@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wixdesigner73-ui.github.io/pride-of-the-pacific/sitemap.xml
